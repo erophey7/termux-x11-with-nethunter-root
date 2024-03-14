@@ -1,19 +1,19 @@
-# how-to-use-termux-x11-with-nethunter-root-install
+# How to use termux-x11 with nethunter root
 
 Instructions for using termux-x11 with kali nethunter:
 1) Installation and setting up of termux and termux-x11:
 
-  * install termux from fdroid, run termux
-  * run commands:
+  * Install termux from fdroid, run termux
+  * Run commands:
   ```
 $ pkg update && pkg upgrade
 $ pkg intall x11-repo
 $ pkg install root-repo
 $ pkg install termux-x11-nightly tsu
   ```
-  * uncomment `allow-external-apps = true` in `termux_home/.termux/termux.properties`
-  * download termux-x11 apk from [Github](https://github.com/termux/termux-x11/releases/tag/nightly)
-  * test termux-x11: run
+  * Uncomment `allow-external-apps = true` in `termux_home/.termux/termux.properties`
+  * Download termux-x11 apk from [Github](https://github.com/termux/termux-x11/releases/tag/nightly)
+  * Test termux-x11: run
    ```
 termux-x11 :1 &
 pkg install firefox-esr     # or any GUI application
