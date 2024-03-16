@@ -24,7 +24,9 @@ kill -                      # - is termux-x11 PID
 2) Script to run termux-x11 from android shell
 
  `# nano path/to/script/x11_start` recomended path: `
-/data/data/com.offsec.nhterm/files/home/.nhterm/script/x11_start`  ```
+/data/data/com.offsec.nhterm/files/home/.nhterm/script/x11_start`  
+
+```
 #!/system/bin/sh
 
 export USER= #run whoami in termux
