@@ -33,5 +33,11 @@ $ kill -                      # - is termux-x11 PID
 3) Usage
   * Run script from root shell `path/to/script/x11_start :1` :1 is display number
   * Set display in kali shell `export DISPLAY=:1`
-  * Run GUI app in kali shell
+  * Launching PulseAudio: `export PULSE_SERVER=127.0.0.1 && pulseaudio --start --disable-shm=1 --exit-idle-time=-1`
+  * Run GUI application in kali shell
+  * To automate, add the following lines to ~/.bashrc:
+ ```
+export DISPLAY=:1
+export PULSE_SERVER=127.0.0.1 && pulseaudio --start --disable-shm=1 --exit-idle-time=-1 &>>
+ ```
 
