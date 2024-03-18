@@ -33,5 +33,11 @@ $ kill -                      # - это termux-x11 PID
 3) Использование:
   * Запустите скрипт из root shell `path/to/script/x11_start :1` :1 это номер дисплея
   * Установите дисплей в kali shell `export DISPLAY=:1`
+  * Запуск PulseAudio: `export PULSE_SERVER=127.0.0.1 && pulseaudio --start --disable-shm=1 --exit-idle-time=-1`
   * Запустите приложние с графическим интерфейсом в kali shell
+  * Для автоматизации добавте в  ~/.bashrc следующие строки:
+ ```
+export DISPLAY=:1
+export PULSE_SERVER=127.0.0.1 && pulseaudio --start --disable-shm=1 --exit-idle-time=-1 &>>
+ ```
   
